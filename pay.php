@@ -90,6 +90,8 @@ if(isset($_REQUEST['pay'])) {
 
       <form class="form-signin" method="POST" action="">
 <?php
+echo '<div><span class="label label-primary">Access Token : '.$_REQUEST['token'].'</span></div>';
+echo '<span class="label label-primary">Account ID : '.$_REQUEST['accid'].'</span>';
 if(isset($pay_result->data->transferResult->message)) {
 
 echo '<span class="label label-primary">'.$pay_result->data->transferResult->message.'</span>';
